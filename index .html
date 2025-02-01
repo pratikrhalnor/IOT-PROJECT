@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Dust Suppression System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Font Awesome for icons -->
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-cloud"></i> IoT Dust Suppression System</h1>
+
+        <div class="switch-container">
+            <label class="switch">
+                <input type="checkbox" id="foggerToggle">
+                <span class="slider round"></span>
+            </label>
+            <p>Fogger Status: <span id="foggerStatus">OFF</span></p>
+        </div>
+
+        <div class="sensor-container">
+            <h2><i class="fas fa-tachometer-alt"></i> Dust Sensor Readings</h2>
+            <p>Dust Level: <span id="dustLevel">0</span></p>
+        </div>
+
+        <div class="runtime-container">
+            <h2><i class="fas fa-clock"></i> Fogger Runtime</h2>
+            <p>Total Run Time: <span id="runtime">0</span> seconds</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
